@@ -1,12 +1,13 @@
 #include <ore/Ore.h>
+#include <gameStates/OpenRRGame.h>
 
 int main(int argc, char* argb[])
 {
     ore::Engine engine;
 
-    ore::GameState gameState;
+    openrr::OpenRRGame mainGameState;
 
-    engine.run("../res/config.json", &gameState);
+    engine.run("../res/config.json", &mainGameState);
 
     return 0;
 }
