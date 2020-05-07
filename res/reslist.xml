@@ -1,0 +1,380 @@
+<resList>
+	<meta author="Bart" version="1.1" name="default" />
+	
+	<!-- 
+	Formatting: 
+	<resourceCategoryName pathPrefix="relative/path/to/jar"> 
+		<resourceType name="named used to get resource ingame" src="pathPrefix + path/to/resource" />
+	</resourceCategoryName>
+	
+	Notes:
+		- The name of resource category name has no effect.
+		- The resource type is used to determine how the resource should be loaded. The loader associated with that name will be used to load the resource.
+	-->
+	
+	<configFiles pathPrefix="res/config/">
+		<config name="config" src="config.cfg" />
+		<config name="keyBindings" src="keyBindings.cfg" />
+	</configFiles>
+	
+	<sounds pathPrefix="res/sounds/">
+		<sound name="teleport" src="teleport.wav"/>
+	</sounds>
+	
+	<models pathPrefix="res/mesh/">
+		<!--<model name="lmsExplorer" src="lmsExplorer.mdl"/>-->
+		<model name="ore" src="ore.mdl"/>
+		<model name="rockRaider" src="minifig.mdl"/>
+		<!--<model name="toolStore" src="toolStore.mdl"/>-->
+		<model name="chrystal" src="chrystal.mdl"/>
+		<!--<model name="map_stud" src="stud.mdl"/>-->
+		
+		<!-- LXFML models -->
+		<lxfmlModel name="toolstore" src="lxfml/toolstore.lxfml" />
+		<lxfmlModel name="teleportPlatform" src="lxfml/teleportPlatform.lxfml" />
+		<lxfmlModel name="dock" src="lxfml/dock.lxfml" />
+		<lxfmlModel name="powerStation" src="lxfml/powerStation.lxfml" />
+		<lxfmlModel name="supportStation" src="lxfml/supportStation.lxfml" />
+		<lxfmlModel name="upgradeStation" src="lxfml/upgradeStation.lxfml" />
+		<lxfmlModel name="oreRefinery" src="lxfml/oreRefinery.lxfml" />
+		<lxfmlModel name="canteen" src="lxfml/canteen.lxfml" />
+		<lxfmlModel name="superTeleport" src="lxfml/superTeleport.lxfml" />
+		<!--<lxfmlModel name="miningLaser" src="lxfml/miningLaser.lxfml" />-->
+	</models>
+	
+	<textures pathPrefix="res/images/">
+		<texture name="mainMenu_skybox" src="mainMenu/skybox.jpg" />
+	
+		<!-- Sidebar textures -->
+
+		<texture name="ingameMenu_General_MenuBackground_4" src="menus/slot4wo.png"/>
+		
+		<texture name="teleportNewRockRaiderButton_Up" src="menus/sidePanel/raider.bmp" />
+		<texture name="teleportNewRockRaiderButton_Over" src="menus/sidePanel/hraider.bmp" />
+		<texture name="teleportNewRockRaiderButton_Down" src="menus/sidePanel/praider.bmp" />
+		<texture name="teleportNewRockRaiderButton_Disabled" src="menus/sidePanel/nraider.bmp" />
+		
+		<texture name="buildingMenu_Up" src="menus/sidePanel/building.bmp" />
+		<texture name="buildingMenu_Over" src="menus/sidePanel/hbuilding.bmp" />
+		<texture name="buildingMenu_Down" src="menus/sidePanel/pbuilding.bmp" />
+		<texture name="buildingMenu_Disabled" src="menus/sidePanel/nbuilding.bmp" />
+		
+		<texture name="smallVehicleMenu_Up" src="menus/sidePanel/svehicle.bmp"/>
+		<texture name="smallVehicleMenu_Over" src="menus/sidePanel/hsvehicle.bmp"/>
+		<texture name="smallVehicleMenu_Down" src="menus/sidePanel/psvehicle.bmp"/>
+		<texture name="smallVehicleMenu_Disabled" src="menus/sidePanel/nsvehicle.bmp"/>
+		
+		<texture name="largeVehicleMenu_Up" src="menus/sidePanel/lvehicle.bmp"/>
+		<texture name="largeVehicleMenu_Over" src="menus/sidePanel/hlvehicle.bmp"/>
+		<texture name="largeVehicleMenu_Down" src="menus/sidePanel/plvehicle.bmp"/>
+		<texture name="largeVehicleMenu_Disabled" src="menus/sidePanel/nlvehicle.bmp"/>
+		
+		<!-- Top bar textures -->
+
+		<texture name="topPanelBase" src="menus/topPanel/topPanel.png"/>
+		
+		<texture name="alert_Over" src="menus/topPanel/alert_over.bmp"/>
+		<texture name="alert_Down" src="menus/topPanel/alert_down.bmp"/>
+		
+		<texture name="help_Over" src="menus/topPanel/help_over.bmp"/>
+		<texture name="help_Down" src="menus/topPanel/help_down.bmp"/>
+		
+		<texture name="priorities_Over" src="menus/topPanel/priorities_over.bmp"/>
+		<texture name="priorities_Down" src="menus/topPanel/priorities_down.bmp"/>
+		
+		<!-- Radar panel textures -->
+
+		<texture name="radarPanelBase" src="menus/radarPanel/radar.png"/>
+		<texture name="radarPanelFill" src="menus/radarPanel/radarFill.png"/>
+		
+		<texture name="radar_Over" src="menus/radarPanel/radar_over.png"/>
+		<texture name="radar_Down" src="menus/radarPanel/radar_down.png"/>
+		
+		<texture name="map_Over" src="menus/radarPanel/map_over.png"/>
+		<texture name="map_Down" src="menus/radarPanel/map_down.png"/>
+		
+		<texture name="radarCamera_Over" src="menus/radarPanel/camera_over.bmp"/>
+		<texture name="radarCamera_Down" src="menus/radarPanel/camera_down.bmp"/>
+		
+		<texture name="radarZoomIn_Up" src="menus/radarPanel/zoom_in_up.bmp"/>
+		<texture name="radarZoomIn_Over" src="menus/radarPanel/zoom_in_over.bmp"/>
+		<texture name="radarZoomIn_Down" src="menus/radarPanel/zoom_in_down.bmp"/>
+		
+		<texture name="radarZoomOut_Up" src="menus/radarPanel/zoom_out_up.png"/>
+		<texture name="radarZoomOut_Over" src="menus/radarPanel/zoom_out_over.png"/>
+		<texture name="radarZoomOut_Down" src="menus/radarPanel/zoom_out_down.png"/>
+		
+		<!-- Resource sidebar -->
+
+		<texture name="resourceSidebarBackground" src="menus/resourcePanel/resourceSidebar.png"/>
+		
+		<!-- Notification panel -->
+
+		<texture name="notificationMessagePanel" src="menus/messagePanel/messagePanel.png"/>
+		<texture name="notificationBackground" src="menus/messagePanel/notificationBackground.png"/>
+		<texture name="notificationPanelSide" src="menus/messagePanel/notificationPanelSide.png"/>
+		
+		<texture name="notificationClose_Over" src="menus/messagePanel/notificationClose_over.bmp"/>
+		<texture name="notificationClose_Down" src="menus/messagePanel/notificationClose_down.bmp"/>
+		
+		<texture name="notificationGoto_Over" src="menus/messagePanel/notificationGoto_over.bmp"/>
+		<texture name="notificationGoto_Down" src="menus/messagePanel/notificationGoto_down.bmp"/>
+		
+		<!-- building menu textures -->
+
+		<texture name="BuildMenu_Background" src="menus/building/panelBackground.png"/>
+		
+		<texture name="BuildMenu_Back_Down" src="menus/building/back_down.bmp"/>
+		<texture name="BuildMenu_Back_Over" src="menus/building/back_over.bmp"/>
+		
+		<texture name="buildingMenu_Dock_Up" src="menus/building/dock.bmp"/>
+		<texture name="buildingMenu_Dock_Down" src="menus/building/dock_down.bmp"/>
+		<texture name="buildingMenu_Dock_Disabled" src="menus/building/dock_disabled.bmp"/>
+		
+		<texture name="buildingMenu_Geo_Up" src="menus/building/geo.bmp"/>
+		<texture name="buildingMenu_Geo_Down" src="menus/building/geo_down.bmp"/>
+		<texture name="buildingMenu_Geo_Disabled" src="menus/building/geo_disabled.bmp"/>
+		
+		<texture name="buildingMenu_Laser_Up" src="menus/building/laser.bmp"/>
+		<texture name="buildingMenu_Laser_Down" src="menus/building/laser_down.bmp"/>
+		<texture name="buildingMenu_Laser_Disabled" src="menus/building/laser_disabled.bmp"/>
+		
+		<texture name="buildingMenu_SuperTeleport_Up" src="menus/building/lteleporter.bmp"/>
+		<texture name="buildingMenu_SuperTeleport_Down" src="menus/building/lteleporter_down.bmp"/>
+		<texture name="buildingMenu_SuperTeleport_Disabled" src="menus/building/lteleporter_disabled.bmp"/>
+		
+		<texture name="buildingMenu_PowerStation_Up" src="menus/building/pstation.bmp"/>
+		<texture name="buildingMenu_PowerStation_Down" src="menus/building/pstation_down.bmp"/>
+		<texture name="buildingMenu_PowerStation_Disabled" src="menus/building/pstation_disabled.bmp"/>
+		
+		<texture name="buildingMenu_Refinery_Up" src="menus/building/refinery.bmp"/>
+		<texture name="buildingMenu_Refinery_Down" src="menus/building/refinery_down.bmp"/>
+		<texture name="buildingMenu_Refinery_Disabled" src="menus/building/refinery_disabled.bmp"/>
+		
+		<texture name="buildingMenu_SmallTeleport_Up" src="menus/building/steleporter.bmp"/>
+		<texture name="buildingMenu_SmallTeleport_Down" src="menus/building/steleporter_down.bmp"/>
+		<texture name="buildingMenu_SmallTeleport_Disabled" src="menus/building/steleporter_disabled.bmp"/>
+		
+		<texture name="buildingMenu_SupportStation_Up" src="menus/building/support.bmp"/>
+		<texture name="buildingMenu_SupportStation_Down" src="menus/building/support_down.bmp"/>
+		<texture name="buildingMenu_SupportStation_Disabled" src="menus/building/support_disabled.bmp"/>
+		
+		<texture name="buildingMenu_ToolStore_Up" src="menus/building/toolstore.bmp"/>
+		<texture name="buildingMenu_ToolStore_Down" src="menus/building/toolstore_down.bmp"/>
+		<texture name="buildingMenu_ToolStore_Disabled" src="menus/building/toolstore_disabled.bmp"/>
+		
+		<texture name="buildingMenu_UpgradeStation_Up" src="menus/building/upgrade.bmp"/>
+		<texture name="buildingMenu_UpgradeStation_Down" src="menus/building/upgrade_down.bmp"/>
+		<texture name="buildingMenu_UpgradeStation_Disabled" src="menus/building/upgrade_disabled.bmp"/>
+		
+		<texture name="buildingMenu_Snackbar_Up" src="menus/building/snackbar.bmp"/>
+		<texture name="buildingMenu_Snackbar_Down" src="menus/building/snackbar_down.bmp"/>
+		<texture name="buildingMenu_Snackbar_Disabled" src="menus/building/snackbar_disabled.bmp"/>
+		
+		<!-- Small vehicle menu -->
+
+		<texture name="smallVehicles_Background" src="menus/smallVehicles/menuBackground.png"/>
+		
+		<texture name="smallVehicles_HoverScout_Up" src="menus/smallVehicles/hoverboard.bmp"/>
+		<texture name="smallVehicles_HoverScout_Down" src="menus/smallVehicles/hoverboard_down.bmp"/>
+		<texture name="smallVehicles_HoverScout_Disabled" src="menus/smallVehicles/hoverboard_disabled.bmp"/>
+		
+		<texture name="smallVehicles_SmallDigger_Up" src="menus/smallVehicles/smallDigger.bmp"/>
+		<texture name="smallVehicles_SmallDigger_Down" src="menus/smallVehicles/smallDigger_down.bmp"/>
+		<texture name="smallVehicles_SmallDigger_Disabled" src="menus/smallVehicles/hoverboard_disabled.bmp"/>
+		
+		<texture name="smallVehicles_SmallTransportTruck_Up" src="menus/smallVehicles/smallTruck.bmp"/>
+		<texture name="smallVehicles_SmallTransportTruck_Down" src="menus/smallVehicles/smallTruck_down.bmp"/>
+		<texture name="smallVehicles_SmallTransportTruck_Disabled" src="menus/smallVehicles/smallTruck_disabled.bmp"/>
+		
+		<texture name="smallVehicles_SmallMobileLaserCutter_Up" src="menus/smallVehicles/smallMWP.bmp"/>
+		<texture name="smallVehicles_SmallMobileLaserCutter_Down" src="menus/smallVehicles/smallMWP_down.bmp"/>
+		<texture name="smallVehicles_SmallMobileLaserCutter_Disabled" src="menus/smallVehicles/smallMWP_disabled.bmp"/>
+		
+		<texture name="smallVehicles_RapidRider_Up" src="menus/smallVehicles/smallCat.bmp"/>
+		<texture name="smallVehicles_RapidRider_Down" src="menus/smallVehicles/smallCat_down.bmp"/>
+		<texture name="smallVehicles_RapidRider_Disabled" src="menus/smallVehicles/smallCat_disabled.bmp"/>
+		
+		<texture name="smallVehicles_TunnelScout_Up" src="menus/smallVehicles/smallHeli.bmp"/>
+		<texture name="smallVehicles_TunnelScout_Down" src="menus/smallVehicles/smallHeli_down.bmp"/>
+		<texture name="smallVehicles_TunnelScout_Disabled" src="menus/smallVehicles/smallHeli_disabled.bmp"/>
+		
+		<!-- Large vehicles menu -->
+
+		<texture name="largeVehicles_Background" src="menus/largeVehicles/menuBackground.png"/>
+		
+		<texture name="largeVehicles_LoaderDozer_Up" src="menus/largeVehicles/bulldozer.bmp"/>
+		<texture name="largeVehicles_LoaderDozer_Down" src="menus/largeVehicles/bulldozer_down.bmp"/>
+		<texture name="largeVehicles_LoaderDozer_Disabled" src="menus/largeVehicles/bulldozer_disabled.bmp"/>
+		
+		<texture name="largeVehicles_GraniteGrinder_Up" src="menus/largeVehicles/walkerDigger.bmp"/>
+		<texture name="largeVehicles_GraniteGrinder_Down" src="menus/largeVehicles/walkerDigger_down.bmp"/>
+		<texture name="largeVehicles_GraniteGrinder_Disabled" src="menus/largeVehicles/walkerDigger_disabled.bmp"/>
+		
+		<texture name="largeVehicles_LargeMobileLaserCutter_Up" src="menus/largeVehicles/largeMWP.bmp"/>
+		<texture name="largeVehicles_LargeMobileLaserCutter_Down" src="menus/largeVehicles/largeMWP_down.bmp"/>
+		<texture name="largeVehicles_LargeMobileLaserCutter_Disabled" src="menus/largeVehicles/largeMWP_disabled.bmp"/>
+		
+		<texture name="largeVehicles_CargoCarrier_Up" src="menus/largeVehicles/largeCatamaran.bmp"/>
+		<texture name="largeVehicles_CargoCarrier_Down" src="menus/largeVehicles/largeCatamaran_down.bmp"/>
+		<texture name="largeVehicles_CargoCarrier_Disabled" src="menus/largeVehicles/largeCatamaran_disabled.bmp"/>
+		
+		<texture name="largeVehicles_ChromeCrusher_Up" src="menus/largeVehicles/largeDigger.bmp"/>
+		<texture name="largeVehicles_ChromeCrusher_Down" src="menus/largeVehicles/largeDigger_down.bmp"/>
+		<texture name="largeVehicles_ChromeCrusher_Disabled" src="menus/largeVehicles/largeDigger_disabled.bmp"/>
+		
+		<texture name="largeVehicles_TunnelTransport_Up" src="menus/largeVehicles/largeHeli.bmp"/>
+		<texture name="largeVehicles_TunnelTransport_Down" src="menus/largeVehicles/largeHeli_down.bmp"/>
+		<texture name="largeVehicles_TunnelTransport_Disabled" src="menus/largeVehicles/largeHeli_disabled.bmp"/>
+
+		<!-- Wall Drill Panel -->
+
+		<texture name="wallDrill_Background" src="menus/wallDrillMenu/menu_background.png"/>
+
+		<texture name="wallDrill_Drill_Up" src="menus/wallDrillMenu/drill.bmp"/>
+		<texture name="wallDrill_Drill_Down" src="menus/wallDrillMenu/Pdrill.bmp"/>
+		<texture name="wallDrill_Drill_Disabled" src="menus/wallDrillMenu/Ndrill.bmp"/>
+
+		<texture name="wallDrill_Use_Dynamite_Up" src="menus/wallDrillMenu/dynamite.bmp"/>
+		<texture name="wallDrill_Use_Dynamite_Down" src="menus/wallDrillMenu/Pdynamite.bmp"/>
+		<texture name="wallDrill_Use_Dynamite_Disabled" src="menus/wallDrillMenu/Ndynamite.bmp"/>
+
+		<texture name="wallDrill_Reinforce_Up" src="menus/wallDrillMenu/Reinforce.bmp"/>
+		<texture name="wallDrill_Reinforce_Down" src="menus/wallDrillMenu/PReinforce.bmp"/>
+		<texture name="wallDrill_Reinforce_Disabled" src="menus/wallDrillMenu/NReinforce.bmp"/>
+
+		<texture name="wallDrill_Stop_Drill_Up" src="menus/wallDrillMenu/stopdrill.bmp"/>
+		<texture name="wallDrill_Stop_Drill_Down" src="menus/wallDrillMenu/Pstopdrill.bmp"/>
+		<texture name="wallDrill_Stop_Drill_Disabled" src="menus/wallDrillMenu/Nstopdrill.bmp"/>
+
+		<!-- Ground Selection Panel -->
+
+		<texture name="groundSelection_Background" src="menus/groundSelectionMenu/menu_background.png"/>
+
+		<texture name="groundSelection_BuildPowerPath_Up" src="menus/groundSelectionMenu/buildpath.bmp"/>
+		<texture name="groundSelection_BuildPowerPath_Down" src="menus/groundSelectionMenu/Pbuildpath.bmp"/>
+		<texture name="groundSelection_BuildPowerPath_Disabled" src="menus/groundSelectionMenu/Nbuildpath.bmp"/>
+
+		<texture name="groundSelection_DestroyPowerPath_Up" src="menus/groundSelectionMenu/diguppath.bmp"/>
+		<texture name="groundSelection_DestroyPowerPath_Down" src="menus/groundSelectionMenu/Pdiguppath.bmp"/>
+		<texture name="groundSelection_DestroyPowerPath_Disabled" src="menus/groundSelectionMenu/Ndiguppath.bmp"/>
+
+		<texture name="groundSelection_PlaceElectricFence_Up" src="menus/groundSelectionMenu/efence.bmp"/>
+		<texture name="groundSelection_PlaceElectricFence_Down" src="menus/groundSelectionMenu/Pefence.bmp"/>
+		<texture name="groundSelection_PlaceElectricFence_Disabled" src="menus/groundSelectionMenu/Nefence.bmp"/>
+
+		<!-- Priorities panel -->
+
+		<texture name="priorities_Background" src="menus/prioritiesPanel/prioritiesBase.png"/>
+		
+		<texture name="priorities_arrowLeft_Over" src="menus/prioritiesPanel/arrowLeft_over.bmp"/>
+		<texture name="priorities_arrowLeft_Down" src="menus/prioritiesPanel/arrowLeft_down.bmp"/>
+		
+		<texture name="priorities_arrowRight_Over" src="menus/prioritiesPanel/arrowRight_over.bmp"/>
+		<texture name="priorities_arrowRight_Down" src="menus/prioritiesPanel/arrowRight_down.bmp"/>
+		
+		<texture name="priorities_arrowUp_Over" src="menus/prioritiesPanel/arrowUp_over.bmp"/>
+		<texture name="priorities_arrowUp_Down" src="menus/prioritiesPanel/arrowUp_down.bmp"/>
+		
+		<texture name="priorities_disable_Over" src="menus/prioritiesPanel/disable_over.bmp"/>
+		<texture name="priorities_disable_Down" src="menus/prioritiesPanel/disable_down.bmp"/>
+		
+		<texture name="priorities_reset_Over" src="menus/prioritiesPanel/reset_over.bmp"/>
+		<texture name="priorities_reset_Down" src="menus/prioritiesPanel/reset_down.bmp"/>
+		
+		<!-- Priority icons -->
+		
+		<texture name="priorities_barrier_Up" src="menus/prioritiesPanel/priorities/barrier.bmp"/>
+		
+		<texture name="priorities_build_Up" src="menus/prioritiesPanel/priorities/build.bmp"/>
+		<texture name="priorities_build_Down" src="menus/prioritiesPanel/priorities/build_down.bmp"/>
+		<texture name="priorities_build_Disabled" src="menus/prioritiesPanel/priorities/build_disabled.bmp"/>
+		
+		<texture name="priorities_clearRubble_Up" src="menus/prioritiesPanel/priorities/clearRubble.bmp"/>
+		<texture name="priorities_clearRubble_Down" src="menus/prioritiesPanel/priorities/clearRubble_down.bmp"/>
+		<texture name="priorities_clearRubble_Disabled" src="menus/prioritiesPanel/priorities/clearRubble_disabled.bmp"/>
+		
+		<texture name="priorities_collectChrystal_Up" src="menus/prioritiesPanel/priorities/collectChrystal.bmp"/>
+		<texture name="priorities_collectChrystal_Down" src="menus/prioritiesPanel/priorities/collectChrystal_down.bmp"/>
+		<texture name="priorities_collectChrystal_Disabled" src="menus/prioritiesPanel/priorities/collectChrystal_disabled.bmp"/>
+		
+		<texture name="priorities_collectOre_Up" src="menus/prioritiesPanel/priorities/collectOre.bmp"/>
+		<texture name="priorities_collectOre_Down" src="menus/prioritiesPanel/priorities/collectOre_down.bmp"/>
+		<texture name="priorities_collectOre_Disabled" src="menus/prioritiesPanel/priorities/collectOre_disabled.bmp"/>
+		
+		<texture name="priorities_collectStud_Up" src="menus/prioritiesPanel/priorities/collectStud.bmp"/>
+		<texture name="priorities_collectStud_Disabled" src="menus/prioritiesPanel/priorities/collectStud_Disabled.bmp"/>
+		
+		<texture name="priorities_drill_Up" src="menus/prioritiesPanel/priorities/drill.bmp"/>
+		<texture name="priorities_drill_Down" src="menus/prioritiesPanel/priorities/drill_down.bmp"/>
+		<texture name="priorities_drill_Disabled" src="menus/prioritiesPanel/priorities/drill_disabled.bmp"/>
+		
+		<texture name="priorities_drive_Up" src="menus/prioritiesPanel/priorities/drive.bmp"/>
+		<texture name="priorities_drive_Down" src="menus/prioritiesPanel/priorities/drive_down.bmp"/>
+		<texture name="priorities_drive_Disabled" src="menus/prioritiesPanel/priorities/drive_disabled.bmp"/>
+		
+		<texture name="priorities_recharge_Up" src="menus/prioritiesPanel/priorities/recharge.bmp"/>
+		<texture name="priorities_recharge_Down" src="menus/prioritiesPanel/priorities/recharge_down.bmp"/>
+		<texture name="priorities_recharge_Disabled" src="menus/prioritiesPanel/priorities/recharge_disabled.bmp"/>
+		
+		<texture name="priorities_refine_Up" src="menus/prioritiesPanel/priorities/refine.bmp"/>
+		
+		<texture name="priorities_reinforce_Up" src="menus/prioritiesPanel/priorities/reinforce.bmp"/>
+		<texture name="priorities_reinforce_Down" src="menus/prioritiesPanel/priorities/reinforce_down.bmp"/>
+		<texture name="priorities_reinforce_Disabled" src="menus/prioritiesPanel/priorities/reinforce_disabled.bmp"/>
+		
+		<texture name="priorities_repair_Up" src="menus/prioritiesPanel/priorities/repair.bmp"/>
+		<texture name="priorities_repair_Down" src="menus/prioritiesPanel/priorities/repair_down.bmp"/>
+		<texture name="priorities_repair_Disabled" src="menus/prioritiesPanel/priorities/repair_disabled.bmp"/>
+		
+	</textures>
+	
+	<menus pathPrefix="res/menus/">
+		<menu name="sideMainMenu" src="sideMain.xml" />
+		<menu name="topMainMenu" src="topMain.xml" />
+		<menu name="radarPanel" src="radarPanel.xml" />
+		<menu name="radarPanel_retracted" src="radarPanel_retracted.xml" />
+		<menu name="resourceSidebar" src="resourceSidebar.xml" />
+		<menu name="notificationPanel" src="notificationPanel.xml" />
+		<menu name="buildMenu" src="buildMenu.xml" />
+		<menu name="buildSmallVehicles" src="smallVehicles.xml" />
+		<menu name="buildLargeVehicles" src="largeVehicles.xml" />
+		<menu name="prioritiesPanel" src="prioritiesPanel.xml" />
+		<menu name="wallDrillMenu" src="wallDrillMenu.xml" />
+		<menu name="groundSelectionMenu" src="groundSelectionMenu.xml" />
+	</menus>
+	
+	<animations pathPrefix="res/anims/">
+		<animation name="raiderWalking" src="raiderWalking.anim"/>
+		<animation name="raiderCarrying" src="raiderCarrying.anim"/>
+		<animation name="raiderPickup" src="raiderPickup.anim"/>
+		<animation name="raiderPutdown" src="raiderPutdown.anim"/>
+
+		<animation name="teleportRockRaider" src="teleportRaider.anim" />
+		
+		<animation name="hideSidebar" src="guiTransitions/hideSidebar.anim" />
+		<animation name="showSidebar" src="guiTransitions/showSidebar.anim" />
+		
+		<animation name="showRadarPanel" src="guiTransitions/showRadarPanel.anim" />
+		<animation name="hideRadarPanel" src="guiTransitions/hideRadarPanel.anim" />
+		
+		<animation name="showPrioritiesPanel" src="guiTransitions/showPrioritiesPanel.anim" />
+		<animation name="hidePrioritiesPanel" src="guiTransitions/hidePrioritiesPanel.anim" />
+	</animations>
+	
+	<scripts pathPrefix="res/scripts/">
+		<script name="main" src="main.py" />
+	</scripts>
+	
+	<maps pathPrefix="res/maps/">
+		<map name="MAP" src="sampleMap.rrm" />
+	</maps>
+	
+	<!-- The shader loader adds .vert and .frag extensions to the source path -->
+	<shaders pathPrefix="res/shaders/">
+		<shader name="phong" src="phong"/>
+		<shader name="shadow_phong" src="shadow_phong"/>
+		<shader name="shadow_pass" src="shadow_pass"/>
+		<shader name="default" src="default"/>
+	</shaders>
+</resList>
