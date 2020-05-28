@@ -1,0 +1,16 @@
+{
+	"meta": {
+		"version": 1
+	},
+
+	"modelFile": "objects3D/lmsExplorer.obj",
+
+	"partStructure": {"name": "root", "nameInObjectFile": "", "pivot": [0, 0, 0], "children": [
+		{"name": "blackGroup", "nameInObjectFile": "blackGroup", "pivot": [0, 0, 0], "children": []},
+		{"name": "blueishGreenGroup", "nameInObjectFile": "blueishGreenGroup", "pivot": [0, 0, 0], "children": []},
+		{"name": "mediumStoneGreyGroup", "nameInObjectFile": "mediumStoneGreyGroup", "pivot": [0, 0, 0], "children": []},
+		{"name": "darkStoneGreyGroup", "nameInObjectFile": "darkStoneGreyGroup", "pivot": [0, 0, 0], "children": []},
+		{"name": "transparentLightBlueGroup", "nameInObjectFile": "transparentLightBlueGroup", "pivot": [0, 0, 0], "children": []},
+		{"name": "transparentBrightGreenGroup", "nameInObjectFile": "transparentBrightGreenGroup", "pivot": [0, 0, 0], "children": []}
+	]}
+}

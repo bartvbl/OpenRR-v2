@@ -1,13 +1,42 @@
 {
 	"meta": {
-		"version": 1,
+		"version": 1
 	},
 
-	"required": {
+	"onDemand": [
+		{
+			"id": "chrystal_loadScreen",
+			"src": "mesh/chrystal.mdl"
+		}
+	],	
 
-	},
+	"streaming": [
 
-	"streaming": {
+	],
 
-	}
+	"required": [
+		{
+			"id": "chrystal",
+			"src": "mesh/chrystal.mdl"
+		},
+		{
+			"id": "ore",
+			"src": "mesh/ore.mdl"
+		},
+		{
+			"id": "minifig",
+			"src": "mesh/minifig.mdl"
+		},
+		{
+			"id": "terrain_texture_map",
+			"src": "textures/terrain.png"
+		},
+		{
+			"id": "lmsExplorer",
+			"src": "mesh/lmsExplorer.mdl"
+		}
+		
+	]
+
+	
 }

@@ -1,4 +1,10 @@
 /textures
-/mesh
 /images
 *.lif
+*.lxf
+*.7z
+*.max
+*.bmp
+*.png
+*.BMP
+*.ttf

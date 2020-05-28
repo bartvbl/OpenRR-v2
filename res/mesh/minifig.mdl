@@ -1,0 +1,21 @@
+{
+	"meta": {
+		"version": 1
+	},
+
+	"modelFile": "objects3D/minifig.obj",
+
+	"partStructure": 
+		{"name": "root", "nameInObjectFile": "", "pivot": [0, 0, 0], "children": [
+			{"name": "belt", "nameInObjectFile": "belt", "pivot": [0, 0.005, -0.15], "children": [
+					{"name": "torso", "nameInObjectFile": "torso", "pivot": [0, 0, -0.2], "children": [
+							{"name": "leftArm", "nameInObjectFile": "arm_l", "pivot": [-0.08, 0.005, -0.35], "children": [
+									{"name": "leftHand", "nameInObjectFile": "hand_l", "pivot": [0, 0, 0], "children": []}]},
+							{"name": "rightArm", "nameInObjectFile": "arm_t", "pivot": [0.08, 0.005, -0.35], "children": [
+									{"name": "rightHand", "nameInObjectFile": "hand_r", "pivot": [0, 0, 0], "children": []}]},
+							{"name": "head", "nameInObjectFile": "head", "pivot": [0, 0, -0.5], "children": []}]}]},
+			{"name": "leftLeg", "nameInObjectFile": "leg_l", "pivot": [0, 0.007, -0.15], "children": []},
+			{"name": "rightLeg", "nameInObjectFile": "leg_r", "pivot": [0, 0.007, -0.15], "children": []}
+		]
+	}
+}

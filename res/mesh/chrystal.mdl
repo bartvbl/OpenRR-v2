@@ -1,0 +1,14 @@
+{
+	"meta": {
+		"version": 1
+	},
+
+	"modelFile": "objects3D/chrystal.obj",
+
+	"partStructure": {
+		"name": "chrystal",
+		"nameInObjectFile": "chrystal",
+		"pivot": [0, 0, 0],
+		"children": []
+	}
+}
