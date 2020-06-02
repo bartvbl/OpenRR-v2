@@ -1,14 +1,19 @@
 #pragma once
 
 #include <ore/resources/resourceTypes/ResourceType.h>
+#include "Map.h"
 
-class MapResource : public ore::resources::ResourceType {
-public:
-    void load(const ore::filesystem::path &fileLocation) override;
+namespace openrr {
+    class MapResource : public ore::resources::ResourceType {
+    public:
+        Map* map;
 
-    bool requiresMainThread() override;
+        void load(const ore::filesystem::path &fileLocation) override;
 
-    void completeLoadOnMainThread() override;
+        bool requiresMainThread() override;
 
-    void destroy() override;
-};
+        void completeLoadOnMainThread() override;
+
+        void destroy() override;
+    };
+}
