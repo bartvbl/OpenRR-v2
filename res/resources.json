@@ -7,6 +7,10 @@
 		{
 			"id": "chrystal_loadScreen",
 			"src": "mesh/chrystal.mdl"
+		},
+		{
+			"id": "loadscreenShader",
+			"src": "shaders/passthroughFlatColour.shader"
 		}
 	],	
 

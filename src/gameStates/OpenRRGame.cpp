@@ -6,12 +6,13 @@ void openrr::OpenRRGame::update() {
 
 }
 
-void openrr::OpenRRGame::set(ore::resources::ResourceCache *cache) {
+void openrr::OpenRRGame::set(ore::GameWorld* world) {
     std::cout << "Initialising game.." << std::endl;
-    cache->enqueueResourceFile("../res/resources.json");
+    world->resourceCache.enqueueResourceFile("../res/resources.json");
+    world->resourceCache.customResources.registerResource("GAME_MAP", ore::resources::ResourceLoadPriority::REQUIRED, "../res/maps/lrr/level06/06.map");
 
     GameEntryLoadScreen loadingScreen;
-    cache->runLoadScreenSequence(&loadingScreen, ore::resources::ResourceLoadPriority::REQUIRED);
+    world->resourceCache.runLoadScreenSequence(&loadingScreen, ore::resources::ResourceLoadPriority::REQUIRED);
 }
 
 void openrr::OpenRRGame::unset() {

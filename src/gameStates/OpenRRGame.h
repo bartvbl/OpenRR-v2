@@ -7,7 +7,7 @@ namespace openrr {
     public:
         void update() override;
 
-        void set(ore::resources::ResourceCache *cache) override;
+        void set(ore::GameWorld* world) override;
 
         void unset() override;
     };

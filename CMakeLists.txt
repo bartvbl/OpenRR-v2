@@ -26,7 +26,8 @@ add_subdirectory(../ORE-v3 ORE-v3)
 #
 include_directories (
         src/
-        ../ORE-v3/src/)
+        ../ORE-v3/src/
+        ../ORE-v3/lib/glm/)
 
 #
 # Add files
