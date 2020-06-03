@@ -12,6 +12,8 @@ namespace openrr {
         ORE_SEAM,
         CHRYSTAL_SEAM,
         RECHARGE_SEAM,
-        WATER
+        WATER,
+        REINFORCED_WALL,
+        SLIMY_SLUG_HOLE
     };
 }
