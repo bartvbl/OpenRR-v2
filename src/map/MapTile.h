@@ -10,6 +10,7 @@ namespace openrr {
         unsigned int forcedErosionRate = 0;
         unsigned int caveinRate = 0;
         unsigned int rubbleLevel = 0;
+        unsigned int rubbleOreContent = 0;
         unsigned int tileHeight = 0;
         bool isMonsterSpawnPoint = false;
         bool hasPowerPath = false;

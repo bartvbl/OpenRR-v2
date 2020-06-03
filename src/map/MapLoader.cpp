@@ -239,7 +239,7 @@ openrr::Map *openrr::loadMap(const ore::filesystem::path &location) {
     }
     if(mapMetadata["mapFiles"]["erodeMap"] != "NONE") {
         readMapComponentFile(containingDirectory / mapMetadata["mapFiles"]["erodeMap"],erodeMap);
-        applyErosionMap(erodeMap, map)
+        applyErosionMap(erodeMap, map);
     }
     if(mapMetadata["mapFiles"]["pathMap"] != "NONE") {
         readMapComponentFile(containingDirectory / mapMetadata["mapFiles"]["pathMap"],pathMap);
@@ -248,6 +248,37 @@ openrr::Map *openrr::loadMap(const ore::filesystem::path &location) {
     if(mapMetadata["mapFiles"]["blockPointersMap"] != "NONE") {
         readMapComponentFile(containingDirectory / mapMetadata["mapFiles"]["blockPointersMap"],blockPointersMap);
     }
+
+    map->metadata.name = mapMetadata["name"];
+    map->metadata.objectiveText = mapMetadata["objectiveText"];
+    map->metadata.enableSpiders = mapMetadata["enableSpiders"];
+    map->metadata.introVideoPath = mapMetadata["introVideo"];
+
+    map->metadata.monsterSpawnEnabled = mapMetadata["monsterSpawns"]["enabled"];
+    map->metadata.monsterSpawnCreature = mapMetadata["monsterSpawns"]["creature"];
+    map->metadata.monsterSpawnTimeout = mapMetadata["monsterSpawns"]["timeout"];
+
+    map->metadata.caveinsEnabled = mapMetadata["caveins"]["enabled"];
+    map->metadata.caveinAnimation = mapMetadata["caveins"]["animation"];
+    map->metadata.caveinTimeoutMultiplier = mapMetadata["caveins"]["timeoutMultiplier"];
+
+    map->metadata.thumbnailRegular = mapMetadata["levelThumbnail"]["regular"];
+    map->metadata.thumbnailHover = mapMetadata["levelThumbnail"]["hover"];
+    map->metadata.thumbnailDisabled = mapMetadata["levelThumbnail"]["disabled"];
+
+    map->metadata.tileWidth = mapMetadata["dimensions"]["tileWidth"];
+    map->metadata.wallHeight = mapMetadata["dimensions"]["wallHeight"];
+    map->metadata.heightMapScaleFactor = mapMetadata["dimensions"]["heightMapScaleFactor"];
+    map->metadata.roofHeight = mapMetadata["dimensions"]["roofHeight"];
+    map->metadata.selectionBoxHeight = mapMetadata["dimensions"]["selectionBoxHeight"];
+
+    map->metadata.textureSet = mapMetadata["textureSet"];
+    map->metadata.rockFallStyle = mapMetadata["rockFallStyle"];
+
+    map->metadata.oxygenRate = mapMetadata["oxygenRate"];
+
+    map->metadata.fogColour = glm::vec3(mapMetadata["fogColour"][0], mapMetadata["fogColour"][1], mapMetadata["fogColour"][2]);
+    map->metadata.highFogColour = glm::vec3(mapMetadata["highFogColour"][0], mapMetadata["highFogColour"][1], mapMetadata["highFogColour"][2]);
 
     return map;
 }

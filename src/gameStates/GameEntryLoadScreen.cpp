@@ -8,10 +8,10 @@ void GameEntryLoadScreen::init(ore::resources::ResourceCache *cache) {
     ore::resources::Mesh mesh;
     ore::resources::MeshGeometry geometry;
     geometry.vertices = {
-            ore::geom::vec3(0, 0, 0),
-            ore::geom::vec3(1, 0, 0),
-            ore::geom::vec3(1, 1, 0),
-            ore::geom::vec3(0, 1, 0)};
+            glm::vec3(0, 0, 0),
+            glm::vec3(1, 0, 0),
+            glm::vec3(1, 1, 0),
+            glm::vec3(0, 1, 0)};
     geometry.indices = {0, 1, 2, 0, 2, 3};
     planeBuffer = ore::gl::generateGeometryBuffer(geometry);
     std::cout << "Loading the loading screen!" << std::endl;
