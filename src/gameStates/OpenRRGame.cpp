@@ -17,7 +17,7 @@ void openrr::OpenRRGame::set(ore::GameWorld* world) {
     GameEntryLoadScreen loadingScreen;
     world->resourceCache.runLoadScreenSequence(&loadingScreen, ore::resources::ResourceLoadPriority::REQUIRED);
 
-
+    
     ore::scene::PerspectiveCamera* camera = new ore::scene::PerspectiveCamera();
     world->scene.rootNode.getChildren()->push_back(camera);
 
